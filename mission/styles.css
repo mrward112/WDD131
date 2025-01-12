@@ -1,0 +1,66 @@
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 1.5;
+}
+
+
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-align: center;
+    color: #006EB6;
+    letter-spacing: 2px;
+    margin-bottom: -20px;
+    padding-top: 5px;
+}
+
+
+/* this should be the line going accross the university name */
+hr {
+    border: 0;
+    height: 0.5px;
+    background-color: rgb(206, 202, 202);
+    margin: 5px 0;
+    
+}
+
+
+/* creating the box that surrounds the mission statement */
+.container {
+    border: 0.5px solid rgb(182, 179, 179);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+/* content that goes with the mission statement */
+main {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+main li {
+    margin-bottom: 15px;
+}
+
+
+
+footer img{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding-bottom: 50px;
+}
