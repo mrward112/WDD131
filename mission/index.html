@@ -6,13 +6,26 @@
     <title>BYU-Idaho Mission Statement</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="author" content="Merrick Ward">
+    <script src="mission.js" defer></script>
+
 </head>
 <body>
+    <!--Select option for light or dark themes goes here-->
+    <label for="theme">Choose a theme:</label>
+    <select name="theme" id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+
+
+
     <div class="container">
         <header>
             <h1>Mission Statement</h1>
             <h2>BRIGHAM YOUNG UNIVERSITY-IDAHO</h2>
         </header>
+
+
         <main>
             <hr> <!-- this is the line under the university name-->
 
@@ -30,8 +43,10 @@
             </ol>   
         
         </main>
+
+
         <footer>
-            <img src="byui-logo_blue.webp" alt="BYU-Idaho Logo">
+            <img id="footerLogo" src="byui-logo_blue.webp" alt="BYU-Idaho Logo">
         </footer>
     </div>
 </body>
