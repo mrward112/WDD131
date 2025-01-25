@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+header, main, footer {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    border: 1px solid #ccc;
+    background-color: rgb(206, 233, 244);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    
+}
+
+section {
+    padding: 3px;
+    background-color: white;
+    color: black;
+}
+
+@media screen and (min-width: 500px) {
+    header {
+       color: white;
+       background-color: #000;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
