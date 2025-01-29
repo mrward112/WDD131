@@ -8,7 +8,7 @@ header, main, footer {
     margin: 1rem auto;
     padding: 0 1rem;
     border: 1px solid #ccc;
-    background-color: rgb(206, 233, 244);
+    background-color: rgb(85, 199, 228);
 }
 
 main {
@@ -19,7 +19,8 @@ main {
 }
 
 section {
-    padding: 3px;
+    margin: 5px 0px;
+    padding: 5px;
     background-color: white;
     color: black;
 }
@@ -27,7 +28,7 @@ section {
 @media screen and (min-width: 500px) {
     header {
        color: white;
-       background-color: #000;
+       background-color: #5f5e5e;
     }
     main {
         grid-template-columns: 1fr 1fr;
