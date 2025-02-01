@@ -14,12 +14,6 @@
      --secondary-font: Mooli, san-serif;
  }
 
-img {
-    max-width: 100%;
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-}
 
 body {
     background-color: rgb(247, 241, 233);
@@ -31,6 +25,46 @@ html, body{
     padding: 0;
     box-sizing: border-box;
 }
+/* ------------------------------------------------------------ */
+
+/* ---------------------Image viewer--------------------------- */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr auto;
+    place-items: center;
+    max-height: 100%;
+}
+
+.viewer img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+.close-viewer {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: large;
+    cursor: pointer;
+    justify-self: end;
+    align-self: start;
+    margin: 20px;
+}
+
+
 /* ------------------------------------------------------------ */
 
 /* ---------------------Header banner-------------------------- */
@@ -62,10 +96,10 @@ header {
 }
 
 #Menu {
-    display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     justify-content: center;
+    display: none;
 }
 /* Menu buttons behavior */
 #Menu a {
@@ -76,6 +110,10 @@ header {
 #Menu a:hover {
     color: var(--accent-color);
     text-decoration: none;
+}
+
+#Menu.visible {
+    display: grid;
 }
 
 /* ------------------------------------------- */
@@ -100,11 +138,15 @@ main {
       width: 100%;
   }
 
-  img {
-      border: white solid 10px;
-      box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4);
-      justify-self: center;
-      align-self: center;
+.gallery img {
+    border: white solid 10px;
+    box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4);
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
   }
 /* -------------------------------------------------- */
 
@@ -145,6 +187,14 @@ footer {
       }
       #hide_menu {
         display: none;
+      }
+      .viewer {
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        left: 10%;
+        right: auto;
+        bottom: auto;
       }
     
   }
