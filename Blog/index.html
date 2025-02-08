@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta Author= "Merrick Ward">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Read For Run</title>
-    <meta author>Merrick Ward</meta>
     <link rel="stylesheet" href="blog.css">
     <script src="blog.js" defer></script>
     <viewport name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +14,57 @@
     <header>
         <h1>Kids Read For Run</h1>
         <nav>
-            <li href="index.html">Home</li>
-            <li href="about.html">About</li>
-            <li href="contact.html">Contact</li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Archive</a></li>
+            <li> <a href="#">Search</a></li>
         </nav>
     </header>
     <body>
         <main>
-            <div></div>
-            <div></div>
-            <div>
+            <div id="book-info">
+                <h2>Book Information</h2>
+                <p><strong>Publish Date:</strong> January 1, 2023</p>
+                <p><strong>Age Range:</strong> 6-10 years</p>
+                <p><strong>Genre:</strong> Fiction</p>
+                <div id="customer-rating">
+                    <h2>Other Readers Rating</h2>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span> <!-- Empty star -->
+                </div>
+            </div>
+            <div id="book-list">
+                <h2>Books</h2>
+                    <li>
+                        <h3>Book Title</h3>
+                        <img src="book-cover.jpg" alt="Book Cover">
+                        <p>Author</p>
+                        <p>Summary</p>
+                    </li>
+                    <li>
+                        <h3>Book Title</h3>
+                        <img src="book-cover.jpg" alt="Book Cover">                        
+                        <p>Author</p>
+                        <p>Summary</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Book Title</h3>
+                        <img src="book-cover.jpg" alt="Book Cover">
+                        <p>Author</p>
+                        <p>Summary</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Book Title</h3>
+                        <img src="book-cover.jpg" alt="Book Cover">
+                        <p>Author</p>
+                        <p>Summary</p>
+                    </li>
+            </div>
+            <div id="filters">
                 <a>Sort</a>
                 <select id="Sort By Filter">
                     <option value=""> </option>
