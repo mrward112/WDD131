@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta Author= "Merrick Ward">
+    <meta name="author" content="Merrick Ward">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Read For Run</title>
     <link rel="stylesheet" href="blog.css">
     <script src="blog.js" defer></script>
     <viewport name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Kids Read For Run - A blog dedicated to book reviews and recommendations for children aged 6-10.">
 </head>
 <body>
     <header>
@@ -17,93 +17,89 @@
         </div>
         <h1>Kids Read For Run</h1>
         <nav>
-            <li> <a href="#">About</a></li>
-            <li> <a href="#">Archive</a></li>
-            <li> <a href="#">Search</a></li>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
         </nav>
     </header>
-    <body>
-        <main>
-            <div id="book-info">
-                <h2>Book Information</h2>
-                <p><strong>Publish Date:</strong> January 1, 2023</p>
-                <p><strong>Age Range:</strong> 6-10 years</p>
-                <p><strong>Genre:</strong> Fiction</p>
-                <div id="customer-rating">
-                    <h2>Other Readers Rating</h2>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9734;</span> <!-- Empty star -->
-                </div>
+    <main id="main">
+        <section id="book-info">
+            <h2>Book Information</h2>
+            <p><strong>Publish Date:</strong> January 1, 2023</p>
+            <p><strong>Age Range:</strong> 6-10 years</p>
+            <p><strong>Genre:</strong> Fiction</p>
+            <div id="customer-rating">
+                <h2>Other Readers Rating</h2>
+                <span class="star" aria-label="4 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
             </div>
-            <div id="book-list">
-                <h2>Books</h2>
-                    <li>
-                        <h3>Book Title</h3>
-                        <img src="book-cover.jpg" alt="Book Cover">
-                        <p>Author</p>
-                        <p>Summary</p>
-                    </li>
-                    <li>
-                        <h3>Book Title</h3>
-                        <img src="book-cover.jpg" alt="Book Cover">                        
-                        <p>Author</p>
-                        <p>Summary</p>
-                    </li>
-                    </li>
-                    <li>
-                        <h3>Book Title</h3>
-                        <img src="book-cover.jpg" alt="Book Cover">
-                        <p>Author</p>
-                        <p>Summary</p>
-                    </li>
-                    </li>
-                    <li>
-                        <h3>Book Title</h3>
-                        <img src="book-cover.jpg" alt="Book Cover">
-                        <p>Author</p>
-                        <p>Summary</p>
-                    </li>
-            </div>
-            <div id="filters">
-                <a>Sort</a>
-                <select id="Sort By Filter">
-                    <option value=""> </option>
-                    <option value="">Ascending</option>
-                    <option value="">Descending</option>
-                    <option value="">Publish date</option>
+        </section>
+        <section id="book-list">
+            <h2>Books</h2>
+            <ul>
+                <li>
+                    <h3>Book Title</h3>
+                    <img src="book-cover.jpg" alt="Book Cover">
+                    <p>Author</p>
+                    <p>Summary</p>
+                </li>
+                <li>
+                    <h3>Book Title</h3>
+                    <img src="book-cover.jpg" alt="Book Cover">                        
+                    <p>Author</p>
+                    <p>Summary</p>
+                </li>
+                <li>
+                    <h3>Book Title</h3>
+                    <img src="book-cover.jpg" alt="Book Cover">
+                    <p>Author</p>
+                    <p>Summary</p>
+                </li>
+                <li>
+                    <h3>Book Title</h3>
+                    <img src="book-cover.jpg" alt="Book Cover">
+                    <p>Author</p>
+                    <p>Summary</p>
+                </li>
+            </ul>
+        </section>
+        <section id="filters">
+            <h2>Filters</h2>
+            <form>
+                <label for="sort-filter">Sort</label>
+                <select id="sort-filter" name="sort">
+                    <option value="">Select</option>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                    <option value="publish-date">Publish date</option>
                 </select>
 
-                <a>Age</a>
-                <select id="Age Filter">
-                    <option value=""> </option>
-                    <option value="">0-5</option>
-                    <option value="">6-10</option>
-                    <option value="">11-15</option>
+                <label for="age-filter">Age</label>
+                <select id="age-filter" name="age">
+                    <option value="">Select</option>
+                    <option value="0-5">0-5</option>
+                    <option value="6-10">6-10</option>
+                    <option value="11-15">11-15</option>
                 </select>
 
-                <a>Genre</a>
-                <select id="Genre Filter">
-                    <option value=""> </option>
-                    <option value="">Fiction</option>
-                    <option value="">Biography</option>
-                    <option value="">Informative</option>
+                <label for="genre-filter">Genre</label>
+                <select id="genre-filter" name="genre">
+                    <option value="">Select</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="biography">Biography</option>
+                    <option value="informative">Informative</option>
                 </select>
 
-                <a>Rating</a>
-                <select id="Rating Filter">
-                    <option value=""> </option>
-                    <option value="">All Audiences</option>
-                    <option value="">Young Adult</option>
-                    <option value="">Mature</option>
+                <label for="rating-filter">Rating</label>
+                <select id="rating-filter" name="rating">
+                    <option value="">Select</option>
+                    <option value="all-audiences">All Audiences</option>
+                    <option value="young-adult">Young Adult</option>
+                    <option value="mature">Mature</option>
                 </select>
-            </div>
-
-        </main>
-
-    </body>
-
+            </form>
+        </section>
+    </main>
 </body>
 </html>
