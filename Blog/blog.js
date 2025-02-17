@@ -42,16 +42,15 @@ const articles = [
 	}
 ]
 
-// Get a reference to the element we want to insert our articles into
+
 const articlesContainer = document.querySelector('#book-list ul');
 const bookInfoSection = document.querySelector('#book-info');
 
-// Function to build and output the HTML for the list of articles
 function displayArticles(articles) {
     articles.forEach(article => {
         // Create a new list item element
         const articleElement = document.createElement('li');
-        articleElement.classList.add('article'); // Add any classes you need
+        articleElement.classList.add('article'); 
 
         // Create a template literal string for the article content
         const articleContent = `
@@ -61,13 +60,11 @@ function displayArticles(articles) {
             <p>Summary: ${article.description} <a href="#">Read More...</a></p>
         `;
 
-        // Set the innerHTML of the new article element to the template literal string
+  
         articleElement.innerHTML = articleContent;
 
-        // Append the new article element to the output element
         articlesContainer.appendChild(articleElement);
     });
 }
 
-// Call the function to display the articles
 displayArticles(articles);
