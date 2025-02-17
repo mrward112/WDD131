@@ -58,6 +58,7 @@ nav {
     margin: 0 auto;
     text-align: center;
     max-width: 100%;
+    padding-right: 40px;
 }
 
 nav a {
@@ -82,32 +83,32 @@ nav a {
 /* ----------------------------------------- */
 
 /*-------------- Book list  ---------------- */
-    #book-list {
-        padding-left: 20px;
-        padding-right: 20px; 
-    }
-    #book-list ul {
-        color: var(--secondary-color);
-        list-style-type: none;
-        padding: 0;
-        margin: -10%;
-        text-align: center;
-    }
-    #book-list h2 {
-        text-align: center;
-        padding-top: 30px;
-    }
-    #book-list h3 {
-        margin-top: 70px;
-    }
-    /* Center the image of the book cover and limits it's size */
-    #book-list img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 250px;
-        min-width: 250px;
-    }
+#book-list {
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+#book-list ul {
+    color: var(--secondary-color);
+    list-style-type: none;
+    padding: 0;
+    margin: -10%;
+    text-align: center;
+}
+#book-list h2 {
+    text-align: center;
+    padding-top: 30px;
+}
+#book-list h3 {
+    margin-top: 70px;
+}
+/* Center the image of the book cover and limits it's size */
+#book-list img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+    min-width: 250px;
+}
 
 /* --------------------------------------------- */
 
