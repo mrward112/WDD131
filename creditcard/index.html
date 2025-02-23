@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Merrick Ward">
+    <meta name="description" content="A credit card form.">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="creditcard.css">
+    <script src="creditcard.js" defer></script>
+</head>
+<body>
+    <form>
+        <div class="card-front">
+            <label class="total">Total: $199 </label>
+            <label for="card-num">Card number </label>
+            <input type="text" id="card-num" name="card-num" placeholder="1234 5678 9101 1020" />
+            <label for="card-holder">Card holder </label>
+            <input type="text" id="card-holder" name="card-holder" placeholder="John Doe" />
+            <label for="card-exp" class="card-exp">Expiration </label>
+            <input type="text" id="card-exp1" name="card-exp1" placeholder="MM" required />
+            <input type="text" id="card-exp2" name="card-exp2" placeholder="YY" required />
+
+        </div>
+        <div class="card-back">
+            <label for="security-code">CVC/CVV </label>
+            <input type="text" id="security-code" name="security-code" placeholder="xxx" />
+
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>

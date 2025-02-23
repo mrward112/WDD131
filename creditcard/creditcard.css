@@ -1,0 +1,117 @@
+/* ------------Universal CSS ------------------ */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-front, .card-back {
+    background-color: gray;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ------------------Card front--------------- */
+.card-front {
+    display: block;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+}
+
+
+.card-exp {
+
+}
+#card-exp1, #card-exp2 {
+    /* position: absolute; */
+    position: ;
+    max-width: 30px;
+}
+#card-exp1 {
+    left: 200px;
+}
+#card-exp2 {
+    left: 250px;
+}
+
+/* ------------------Card back--------------- */
+.card-back {
+    z-index: 1;
+    top: 60px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.card-back label {
+    margin-bottom: 0;
+}
+
+#security-code {
+    margin-top: 5px;
+}
+.card-back {
+    z-index: 1;
+    top: 60px;
+    left: 100px;
+}
+
+#security-code {
+    margin-top: 5px;
+    width: 60px;
+
+}
+/* ------------------Other--------------------- */
+.card-front {
+    display: block;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+}
+
+.card-exp {}
+
+#card-exp1,
+#card-exp2 {
+    position: absolute;
+    max-width: 30px;
+}
+
+#card-exp1 {
+    left: 200px;
+}
+
+#card-exp2 {
+    left: 250px;
+}
+
+/* -----------------submit button---------------- */
+
+/* Submit button styling */
+.submit-button {
+    position: absolute;
+    top: 290px; /* Adjust this value as needed */
+    left: 335px; /* Align with the card-back div */
+    background-color: rgb(214, 205, 205);
+    color: rgb(2, 2, 2);
+    padding: 7px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
