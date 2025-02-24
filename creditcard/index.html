@@ -16,14 +16,20 @@
             <label class="total">Total: $199 </label>
             <label for="card-num">Card number </label>
             <input type="text" id="card-num" name="card-num" placeholder="1234 5678 9101 1020" />
-            <label for="card-holder">Card holder </label>
-            <input type="text" id="card-holder" name="card-holder" placeholder="John Doe" />
-            <label for="card-exp" class="card-exp">Expiration </label>
-            <input type="text" id="card-exp1" name="card-exp1" placeholder="MM" required />
-            <input type="text" id="card-exp2" name="card-exp2" placeholder="YY" required />
-
+            <div class="card-holder-exp-container">
+                <div class="card-holder-container">
+                    <label for="card-holder">Card holder </label>
+                    <input type="text" id="card-holder" name="card-holder" placeholder="John Doe" />
+                </div>
+                <div class="card-exp-container">
+                    <label for="card-exp" class="card-exp">Expiration </label>
+                    <input type="text" id="card-exp1" name="card-exp1" placeholder="MM" required />
+                    <input type="text" id="card-exp2" name="card-exp2" placeholder="YY" required />
+                </div>
+            </div>
         </div>
         <div class="card-back">
+            <div class="magnetic-strip"></div>
             <label for="security-code">CVC/CVV </label>
             <input type="text" id="security-code" name="security-code" placeholder="xxx" />
 
