@@ -53,10 +53,9 @@ label {
     margin-top: 25px;
 }
 
-#card-exp1,
-#card-exp2 {
+#card-exp1, #card-exp2 {
     position: absolute;
-    max-width: 30px;
+    max-width: 25px;
 }
 
 #card-exp1 {
@@ -102,8 +101,8 @@ label {
 /* Submit button styling */
 .submit-button {
     position: absolute;
-    top: 290px; 
-    left: 350px; 
+    top: 280px; 
+    left: 345px; 
     background-color: rgb(214, 205, 205);
     color: rgb(2, 2, 2);
     padding: 7px 20px;
@@ -121,7 +120,5 @@ label {
     width: 100%;
     height: 40px;
     margin-bottom: 80px;
-    background-color: black;
-
-    
+    background-color: black; 
 }
