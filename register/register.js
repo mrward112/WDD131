@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const participantsFieldset = document.querySelector('.participants');
         participantsFieldset.insertBefore(newParticipantSection, document.getElementById('add'));
     });
+
+    document.getElementById('registerForm').addEventListener('submit', submitForm);
 });
 
 function participantTemplate(count) {
@@ -58,16 +60,16 @@ function submitForm(event) {
     const form = document.getElementById('registerForm');
     const formData = new FormData(form);
 
-    const participants = [];
+    let totalFees = 0;
     for (let i = 1; i <= participantCount; i++) {
-        const participant = {
-            name: formData.get(`fname${i}`),
-            activity: formData.get(`activity${i}`),
-            fee: formData.get(`fee${i}`),
-            date: formData.get(`date${i}`),
-            grade: formData.get(`grade${i}`)
-        };
-        participants.push(participant);
+        const fee = parseFloat(formData.get(`fee${i}`)) || 0;
+        totalFees += fee;
     }
 
+    const adultName = formData.get('adult_name');
+    const summary = document.getElementById('summary');
+    summary.innerHTML = `Thank you ${adultName} for registering. You have registered ${participantCount} participants and owe $${totalFees.toFixed(2)} in Fees.`;
+
+    form.style.display = 'none';
+    summary.style.display = 'block';
 }
