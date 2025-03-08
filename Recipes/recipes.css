@@ -1,0 +1,110 @@
+/* -----------------universal CSS--------- */
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+
+ :root {
+     --primary-color: #1B98E0;
+     --secondary-color: #59c3c3;
+     --text-dark: #333;
+     --text-light: #ebebeb;
+     --primary-font: Arial, Helvetica, sans-serif;
+     --secondary-font: "Amatic SC";
+ }
+
+
+img {
+    max-width: 50%;
+}
+
+body {
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -----------------Header---------------- */
+header {
+    display: flex;
+    font-family: 'Sour Gummy', cursive;
+    font-size: 1.5em;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    align-self: center; 
+    margin: 0;
+    margin-top: 30px;
+}
+
+.logo {
+    max-width: 80px;
+    margin-right: 10px; 
+}
+
+/* ---------------body---------------- */
+form {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+form input[type="search"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #000000;
+    border-radius: 4px 0 0 4px;
+}
+
+form button {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-icon-button {
+    display: flex;
+    max-width: 20px;
+}
+
+.recipe1 {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    border: 1px solid #000; 
+    border-radius: 6px; 
+    padding: 10px; 
+}
+
+.recipe1 img {
+    max-width: 80%;
+}
+
+/* -----------------footer-------------- */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    padding: 10px;
+    background-color: #f8f8f8; 
+}
+footer img {
+    display: flex;
+    min-width: 50px;
+    max-width: 51px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.attributions {
+    font-size: 0.6em;
+}
