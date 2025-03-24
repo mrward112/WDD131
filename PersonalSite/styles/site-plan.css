@@ -7,10 +7,11 @@ Fonts are separated by a | */
 
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #2ECC71;
-    --secondary-color: #2C3E50;
-    --accent1-color: #3498DB;
-    --accent2-color: #E67E22;
+    --primary-color: #0A090C;
+    --secondary-color: #07393C;
+    --accent1-color: #2C666E;
+    --accent2-color: #F59B4C;
+    --background-color: #FFFFFF;
 
     /* change the values below to your chosen font(s) */
     --heading-font: 'Bebas Neue', sans-serif;
