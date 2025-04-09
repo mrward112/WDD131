@@ -1,4 +1,9 @@
 /* -----------------Universal------------- */
+
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&display=swap');
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -147,12 +152,15 @@ nav {
 
 .fit-track-intro h2 {
     margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
 }
 
 .fit-track-intro p {
     flex: 1;
     text-align: center;
     margin: 0 40px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .right-image {
@@ -178,11 +186,14 @@ nav {
 
 .tools-content h2 {
     margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
 }
 
 .tools-content p {
     flex: 1;
     margin: 0 40px;
+    font-family: 'Roboto Slab', serif;
     
 }
 
@@ -231,6 +242,9 @@ footer {
 
 .footer-left {
     font-size: 0.9em;
+    color: #fff;
+
+    
 }
 
 .footer-right a {

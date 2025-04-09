@@ -1,0 +1,53 @@
+.calorie-tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bmi-calculator {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items at the top */
+    gap: 40px; /* Add spacing between the calculator and results */
+}
+
+.bmi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align inputs and title to the left */
+    padding-left: 40px;
+}
+
+.bmi-inputs {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    gap: 10px;
+    margin: 10px 20px 40px 20px;
+}
+
+.bmi-results {
+    display: flex;
+    flex-direction: column; /* Stack textarea and text vertically */
+    justify-content: flex-end;
+    align-items: center; 
+    gap: 10px; 
+    margin: 100px -30px;
+    /* padding-left: 40px; */
+}
+
+#finalresults {
+    resize: none;
+    width: 150px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#bmi-text {
+    max-width: 300px; /* Optional: Limit the width of the text */
+    font-size: 14px;
+    line-height: 1.5;
+}
