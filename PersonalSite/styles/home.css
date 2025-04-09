@@ -1,3 +1,4 @@
+/* -----------------Universal------------- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,8 @@ body {
     line-height: 1.6;
 }
 
+
+/* -----------------header--------------- */
 header {
     margin: 0;
     background-color: #F59B4C;
@@ -57,6 +60,8 @@ nav {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 .nav-links a:hover {
@@ -67,6 +72,8 @@ nav {
 }
 
 
+/* -----------------main--------------- */
+/* Banner */
 .banner-image {
     width: 100%;
     max-height: 45em;
@@ -80,7 +87,7 @@ nav {
 }
 
 .banner-image.visible {
-    opacity: 1;
+    opacity: 0.8;
     transform: translateY(0);
 }
 
@@ -95,7 +102,9 @@ nav {
     opacity: 1;
     transform: translateY(0);
 }
+/* banner end */
 
+/* Welcome to Fit-Track content */
 .text-image,
 .image-text {
     display: flex;
@@ -114,6 +123,9 @@ nav {
     min-width: 175px;
     height: auto;
 }
+/* Content end */
+
+/* Fit-Track tools content */
 
 .image-text img {
     width: 25%;
@@ -126,6 +138,62 @@ nav {
     flex: 1;
 }
 
+.text-image, .image-text {
+    margin-bottom: 40px;
+}
+
+.text-image h2, .image-text h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.text-image-content, .image-text-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-image-content p, .image-text-content p {
+    flex: 1;
+}
+
+.text-image-content img, .image-text-content img {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.right-image {
+    margin-left: auto; /* Align the right image to the right */
+}
+
+.left-image {
+    margin-right: auto; /* Align the left image to the left */
+}
+
+/* Buttons */
+.button-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background-color: #F59B4C; /* Orange background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #333; /* Dark gray background */
+    color: #F59B4C; /* Orange text */
+}
+
+
+/* -----------------footer--------------- */
 footer {
     background-color: #333;
     color: #fff;
