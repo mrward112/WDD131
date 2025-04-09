@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const bannerImage = document.querySelector(".banner-image");
     const contentSection = document.querySelector(".content");
+    const signupButton = document.querySelector(".signup-button");
 
     const handleScroll = () => {
         const bannerRect = bannerImage.getBoundingClientRect();
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (bannerVisible) {
             bannerImage.classList.add("visible");
+            signupButton.classList.add("visible"); // Add visible class to the button
         }
 
         if (contentVisible) {

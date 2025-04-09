@@ -103,11 +103,11 @@ nav {
     transform: translateY(0);
 }
 
-/* Sign Up Button Styling */
+
 .signup-button {
     position: absolute;
     top: 350px;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     background-color: #F59B4C;
     color: white;
@@ -115,14 +115,26 @@ nav {
     padding: 20px 30px;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
+/* Fade-in animation for the sign-up button */
+.signup-button {
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.signup-button.visible {
+    opacity: 1;
+    transform: translateY(0); 
+    transition-delay: 0.5s;
+}
 .signup-button:hover {
     background-color: #333;
-    transform: translateX(-50%) scale(1.2);
 }
-/* banner end */
+
+/*-------- banner end --------------- */
 
 /* Fit-Track Intro Styling */
 .fit-track-intro {
@@ -140,20 +152,18 @@ nav {
 .fit-track-intro p {
     flex: 1;
     text-align: center;
+    margin: 0 40px;
 }
 
 .right-image {
     max-width: 250px; 
     height: auto; 
-    border-radius: 10px; 
-
-    
+    border-radius: 10px;   
 }
 
 .fit-track-intro .button-link {
     margin-top: 10px; 
 }
-
 
 
 /* Tools Content Styling */
@@ -163,7 +173,7 @@ nav {
     text-align: center;
     align-items: center;
     gap: 20px; 
-    margin-bottom: 40px; 
+
 }
 
 .tools-content h2 {
@@ -172,6 +182,8 @@ nav {
 
 .tools-content p {
     flex: 1;
+    margin: 0 40px;
+    
 }
 
 .tools-content img {
@@ -204,7 +216,7 @@ nav {
     color: #F59B4C;
     transform: scale(1.2);
 }
-
+/* -----------------Main End--------------------- */
 
 
 /* -----------------footer--------------- */
@@ -253,6 +265,7 @@ footer {
     }
     .signup-button {
         top: 400px;
+        left: 40%;
         padding: 15px 25px; 
         font-size: 0.9em; 
     }
